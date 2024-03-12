@@ -7,7 +7,7 @@ public class CheckPlamdrom {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter String:");
+		System.out.println("\n Enter String: \n");
 		String input = scanner.nextLine();
 
 		if(isPalindrom(input)) {

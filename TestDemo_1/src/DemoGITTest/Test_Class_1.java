@@ -10,15 +10,18 @@ public class Test_Class_1 {
 
 	public static void main(String[] args) {
 		String s = "RajatManga";
-		System.out.println(printduplicateCharacter(s));
+		System.out.println(removeduplicateCharacter(s));
 		
 	}
 	
-	public static String printduplicateCharacter(String str) {
+	public static String removeduplicateCharacter(String str) {
 		String newStr= "";
 		 for (int i=0; i<str.length(); i++) {
 			 char ch = str.charAt(i);
-			 if(newStr.indexOf(ch)== -1) {
+			/*in below loop we are looking for char present in 
+			 newStr or not
+			 if not index should be -1 */
+			 if(newStr.indexOf(ch) == -1) { 
 				 
 				 newStr = newStr+ch;
 			 }
@@ -26,9 +29,5 @@ public class Test_Class_1 {
 		 return newStr;
 	}
 	
-	public static void  removeDuplicate_Element_Array(Array a) {
-		
-		
-		
-	}
+	
 }
